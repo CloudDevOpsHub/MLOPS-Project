@@ -1,8 +1,6 @@
-# 🩺 Diabetes Prediction Model – Your First MLOps Project (FastAPI + Docker + K8s)
+# 🩺 IT Package Prediction Model – Your First MLOps Project (FastAPI + Docker + K8s)
 
-> 🎥 YouTube video for the project: **"Build Your First MLOps Project"**
-
-This project helps you learn **Building and Deploying an ML Model** using a simple and real-world use case: predicting whether a person is diabetic based on health metrics. We’ll go from:
+This project helps you learn **Building and Deploying an ML Model** using a simple and real-world use case: predicting whether a IT Student is require upskill or not . We’ll go from:
 
 - ✅ Model Training
 - ✅ Building the Model locally
@@ -14,12 +12,7 @@ This project helps you learn **Building and Deploying an ML Model** using a simp
 
 ## 📊 Problem Statement
 
-Predict if a person is diabetic based on:
-- Pregnancies
-- Glucose
-- Blood Pressure
-- BMI
-- Age
+
 
 We use a Random Forest Classifier trained on the **Pima Indians Diabetes Dataset**.
 
@@ -30,8 +23,7 @@ We use a Random Forest Classifier trained on the **Pima Indians Diabetes Dataset
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/iam-veeramalla/first-mlops-project.git
-cd first-mlops-project
+
 ```
 
 ### 2. Create Virtual Environment
@@ -62,13 +54,7 @@ uvicorn main:app --reload
 ### Sample Input for /predict
 
 ```
-{
-  "Pregnancies": 2,
-  "Glucose": 130,
-  "BloodPressure": 70,
-  "BMI": 28.5,
-  "Age": 45
-}
+
 ```
 
 ## Dockerize the API
@@ -76,24 +62,18 @@ uvicorn main:app --reload
 ### Build the Docker Image
 
 ```
-docker build -t diabetes-prediction-model .
+ .
 ```
 
 ### Run the Container
 
 ```
-docker run -p 8000:8000 diabetes-prediction-model
+
 ```
 
 ## Deploy to Kubernetes
 
 ```
-kubectl apply -f diabetes-prediction-model-deployment.yaml
+
 ```
-
-🙌 Credits
-
-Created by `ABHISHEK VEERAMALLA`
-
-Subscribe for more DevOps + MLOps content on the YouTube Channel - `Abhishek.Veeramalla`
 
